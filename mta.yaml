@@ -1,6 +1,6 @@
 ID: UDWH
 _schema-version: '2.0'
-version: 1.0.0
+version: 1.0.1
 
 modules:
  - name: udwh_cl_ca
@@ -13,7 +13,7 @@ resources:
  - name: hdi_udwh_cl_ca
    parameters:
       config:
-         schema: UDWH
+         schema: UDWH_RUN
    properties:
       hdi-container-name: ${service-name}
    type: com.sap.xs.hdi-container
