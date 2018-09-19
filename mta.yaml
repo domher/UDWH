@@ -1,19 +1,17 @@
 ID: UDWH
 _schema-version: '2.0'
-version: 1.0.1
-
+version: 2.0.0
 modules:
- - name: udwh_cl_ca
-   type: hdb
-   path: udwh_cl_ca
-   requires:
-    - name: hdi_udwh_cl_ca
-
+  - name: udwh_cl_ca
+    type: hdb
+    path: udwh_cl_ca
+    requires:
+      - name: hdi_udwh_cl_ca
 resources:
- - name: hdi_udwh_cl_ca
-   parameters:
+  - name: hdi_udwh_cl_ca
+    parameters:
       config:
-         schema: UDWH_RUN
-   properties:
-      hdi-container-name: ${service-name}
-   type: com.sap.xs.hdi-container
+        schema: UDWH_RUN
+    properties:
+      hdi-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container
