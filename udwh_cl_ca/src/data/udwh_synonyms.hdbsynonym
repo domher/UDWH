@@ -1,0 +1,14 @@
+{
+  "DUMMY": {
+    "target": {
+      "object": "DUMMY",
+      "schema": "SYS"
+    }
+  },
+  "CL_KE_VERTRAG_CLASSIC_SCHEMA": {
+    "target": {
+      "schema": "UDWH",
+      "object": "CL_KE_VERTRAG_CLASSIC_SCHEMA"
+    }
+  }
+}
