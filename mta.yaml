@@ -2,14 +2,18 @@ ID: UDWH
 _schema-version: '2.0'
 version: 2.1.0
 modules:
-  
-
-  - name: ca_sandbox
+  - name: udwh_cl_ca
     type: hdb
-    path: ca_sandbox
+    path: udwh
     requires:
-     - name: hdi_ca_sandbox
-
+      - name: hdi_udwh_cl_ca
+        properties:
+          TARGET_CONTAINER: '~{hdi-container-name}'
+      - name: CROSS_SCHEMA_PRODUCTS
+        group: SERVICE_REPLACEMENTS
+        properties:
+          key: ServiceName_1
+          service: '~{products-service-name}'
 resources:
   - name: hdi_udwh_cl_ca
     parameters:
@@ -22,12 +26,3 @@ resources:
     properties:
       products-service-name: '${service-name}'
     type: org.cloudfoundry.existing-service
-
-  - name: hdi_ca_sandbox
-    parameters:
-       config:
-          schema: CA_SANDBOX
-    properties:
-       hdi-container-name_2: ${service-name}
-    type: com.sap.xs.hdi-container
-
