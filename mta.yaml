@@ -4,7 +4,7 @@ version: 2.1.0
 modules:
   - name: udwh_cl_ca
     type: hdb
-    path: udwh
+    path: udwh_cl_ca
     requires:
       - name: hdi_udwh_cl_ca
         properties:
