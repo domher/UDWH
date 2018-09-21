@@ -7,5 +7,6 @@
     /*@@layout{"layoutInfo":{"x":-635,"y":-56.5}}*/
     entity CL_AE_VERTRAG {
         key SID_CL_KE_VERTRAG : Integer;
+        	SID_CL_KE_KUNDE	  : Integer;
             VERTRAGSDATUM     : LocalDate;
     };
