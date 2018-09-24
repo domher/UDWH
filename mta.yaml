@@ -2,11 +2,11 @@ ID: UDWH
 _schema-version: '2.0'
 version: 2.3.0
 modules:
-  - name: udwh_cl_ca
+  - name: udwh_db
     type: hdb
-    path: udwh_cl_ca
+    path: udwh_db
     requires:
-      - name: hdi_udwh_cl_ca
+      - name: hdi_udwh_db
         properties:
           TARGET_CONTAINER: '~{hdi-container-name}'
       - name: CROSS_SCHEMA_PRODUCTS
@@ -15,7 +15,7 @@ modules:
           key: ServiceName_1
           service: '~{products-service-name}'
 resources:
-  - name: hdi_udwh_cl_ca
+  - name: hdi_udwh_db
     parameters:
       config:
         schema: UDWH_RUN
