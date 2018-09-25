@@ -1,6 +1,6 @@
 ID: UDWH
 _schema-version: '2.0'
-version: 2.7.3
+version: 2.7.4
 modules:
   - name: udwh_db
     type: hdb
@@ -18,7 +18,7 @@ resources:
   - name: hdi_udwh_db
     parameters:
       config:
-        schema: UDWH_LIVE
+        schema: UDWH_RUN
     properties:
       hdi-container-name: '${service-name}'
     type: com.sap.xs.hdi-container
