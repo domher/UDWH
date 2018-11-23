@@ -1,0 +1,12 @@
+{
+	"role": {
+		"name": "select_cl",
+		"object_privileges": [
+			{
+				"name": "CL_KE_VERTRAG",
+				"type": "TABLE",
+				"privileges": [ "SELECT" ]
+			}
+		]
+	}
+}
